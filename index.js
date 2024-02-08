@@ -28,4 +28,9 @@ app.post('/create_contact',async (req, res) => {
   
  })
 
+ app.get('/contact_details',async (req, res) => {
+  const ex= await Contact.find()
+ res.json(ex)
+})
+
 
